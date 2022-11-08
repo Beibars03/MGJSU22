@@ -1,5 +1,73 @@
-
-/* 
-.title{
-    font-family: 'Ruthie', cursive;
-} */
+.loader{
+    background:#94ADB2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.loader::after{
+    content: "";
+    background: url("../../images/loader-texture.webp");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+.loader-cloud{
+    position: absolute;
+    width: 132vw;
+}
+.loader-cloud:nth-child(1){
+    top: 16vw;
+    left: -44vw;
+    transform: rotate(-4.9deg);
+    z-index: 3;
+    animation: cloud1 1s forwards 1s 1;
+}
+@keyframes cloud1 {
+    0%{
+        top: 16vw;
+        left: -44vw;
+    }
+    100%{
+        top: 22vw;
+        left: -80vw;
+    }
+}
+.loader-cloud:nth-child(2){
+    top: 8vw;
+    left: 32vw;
+    transform: rotate(25.79deg);
+    z-index: 2;
+    animation: cloud2 1s forwards 1s 1;
+}
+@keyframes cloud2 {
+    0%{
+        top: 8vw;
+        left: 32vw;
+    }
+    100%{
+        top: 24vw;
+        left: 60vw;
+    }
+}
+.loader-cloud:nth-child(3){
+    top: -24vw;
+    left: -24vw;
+    z-index: 1;
+    animation: cloud3 1s forwards 1s 1;
+}
+@keyframes cloud3 {
+    0%{
+        top: -24vw;
+        left: -24vw;
+    }
+    100%{
+        top: -42vw;
+        left: -32vw;
+    }
+}
