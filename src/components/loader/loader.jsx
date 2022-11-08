@@ -25,7 +25,7 @@ const clouds = [
 ]
 const Loader = () =>{
     return(
-        <section className="loader">
+        <section className="loader texture">
             <div className="clouds">
                     {clouds.map((image, index)=>
                         <img src={image.src} className={image.class} alt={image.alt} key={index} />

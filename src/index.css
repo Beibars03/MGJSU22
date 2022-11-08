@@ -38,3 +38,19 @@ button {
 a { 
   text-decoration:none;   
 }
+
+.texture{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+}
+.texture::after{
+  content: "";
+  background: url("./images/loader-texture.webp");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+}
