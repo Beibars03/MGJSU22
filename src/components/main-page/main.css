@@ -1,0 +1,10 @@
+.main{
+    background:#94ADB2;
+    align-items: center;
+}
+.venus{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90vh;
+}

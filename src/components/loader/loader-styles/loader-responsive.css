@@ -4,8 +4,6 @@
         top: 60vw;
         left: -106vw;
         width: 220vw;
-        animation-name: cloud1_ease-out1,
-                        cloud1_ease-out2;
     }
     
     @keyframes cloud1_ease-out1 {
@@ -22,20 +20,20 @@
     @keyframes cloud1_ease-out2{
         0%{
             top: 80vw;
-            left: -136vw;
+            left: -140vw;
         }
         100%{
             top: 82vw;
             left: -138vw;
+
         }
     }
     .cloud_img:nth-child(2){
         top: 29vw;
         left: 14vw;
         width: 200vw;
-        transform: rotate(25.79deg);
-        animation-name: cloud2_ease-out1,
-                        cloud2_ease-out2;
+        
+      
     }
     @keyframes cloud2_ease-out1{
         0%{
@@ -46,6 +44,7 @@
             top: 50vw;
             left: 40vw;
             transform: rotate(0deg);
+          
         }
     }
     @keyframes cloud2_ease-out2{
@@ -62,8 +61,7 @@
         top: -32vw;
         left: -52vw;
         width: 220vw;
-        animation-name: cloud3_ease-out1,
-                        cloud3_ease-out2;
+       
     }
     @keyframes cloud3_ease-out1{
         0%{
@@ -74,6 +72,7 @@
             top: -62vw;
             left: -92vw;
             transform: rotate(0deg);
+           
         }
     }
     @keyframes cloud3_ease-out2{
@@ -86,15 +85,12 @@
             left: -94vw;
         }
     }
-    .dedal-icarus_img{
-        position: absolute;
-        animation: 1s forwards 3s 1;
-    }
+  
     .dedal-icarus_img:nth-child(1){
         top: 10vw;
         left: 16vw;
         width: 54vw;
-        animation-name: icarus;
+      
     }
     @keyframes icarus {
         0%{
@@ -110,7 +106,7 @@
         top: 67vw;
         left: 20vw;
         width: 62vw;
-        animation-name: dedal;
+        
     }
     @keyframes dedal {
         0%{
@@ -126,15 +122,14 @@
   
   
 }
-
+@media (min-width: 768px) { 
+}
 @media (min-width: 992px) {
     .cloud_img:nth-child(1){
         top: 8vw;
         left: -42vw;
         width: 120vw;
-        /* animation-name: cloud1_ease-out1,
-                        cloud1_ease-out2              */
-       
+      
     }
     @keyframes cloud1_ease-out1 {
         0%{
@@ -162,8 +157,7 @@
         top: 9vw;
         left: 32vw;
         width: 100vw;
-        /* animation-name: cloud2_ease-out1,
-                        cloud2_ease-out2;                   */
+         
     }
     @keyframes cloud2_ease-out1{
         0%{
@@ -190,8 +184,6 @@
         top: -22vw;
         left: -8vw;
         width: 116vw;
-        /* animation-name: cloud3_ease-out1,
-                        cloud3_ease-out2; */
        
     }
     @keyframes cloud3_ease-out1{
@@ -220,8 +212,9 @@
         top: 6vw;
         left: 30vw;
         width: 28vw;
-        /* animation-name: icarus; */
+       
     }
+  
     @keyframes icarus {
         0%{
             top: 6vw;
@@ -234,16 +227,30 @@
             opacity: 1;
         }
     }
+    .dedal-icarus_img:nth-child(2){
+        top: 25vw;
+        left: 47vw;
+        width: 34vw;
+       
+    }
+    @keyframes dedal {
+        0%{
+            top: 25vw;
+            left: 47vw;
+        }
+        100%{
+            top: 2vw;
+            left: 60vw;
+        }
+    }
 }
-
 @media (min-width: 1200px) {
     .cloud_img:nth-child(1){
         top: 8vw;
         left: -42vw;
         width: 120vw;
      
-        animation-name: cloud1_ease-out1, 
-                        cloud1_ease-out2;
+       
     }
     @keyframes cloud1_ease-out1 {
         0%{
@@ -270,8 +277,7 @@
         top: 9vw;
         left: 32vw;
         width: 100vw;
-        animation-name: cloud2_ease-out1,
-                        cloud2_ease-out2;                  
+                    
     }
     @keyframes cloud2_ease-out1{
         0%{
@@ -299,8 +305,7 @@
         left: -8vw;
         width: 116vw;
         
-        animation-name: cloud3_ease-out1,
-                        cloud3_ease-out2;
+      
     }
     @keyframes cloud3_ease-out1{
         0%{
@@ -327,12 +332,7 @@
         position: absolute;
         animation: 1s forwards 3s 1;
     }
-    .dedal-icarus_img:nth-child(1){
-        top: 6vw;
-        left: 30vw;
-        width: 28vw;
-        animation-name: icarus;
-    }
+
     @keyframes icarus {
         0%{
             top: 6vw;
@@ -343,37 +343,7 @@
             left: 20vw;    
         }
     }
-    .dedal-icarus_img:nth-child(2){
-        top: 25vw;
-        left: 47vw;
-        width: 34vw;
-        animation-name: dedal;
-    }
-    @keyframes dedal {
-        0%{
-            top: 25vw;
-            left: 47vw;
-        }
-        100%{
-            top: 2vw;
-            left: 60vw;
-        }
-    }
-    .start-link{
-       
-        font-size: 42px;
-       
-        animation: start_ease-in 1s forwards 3s 1;
     
-    }
-    @keyframes start_ease-in {
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
    
     
 }
