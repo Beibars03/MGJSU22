@@ -1,5 +1,5 @@
-import "./loader.css";
-import { Container } from "react-bootstrap"
+import "./loader-styles/loader.css";
+import "./loader-styles/loader-responsive.css";
 import { Link } from "react-router-dom";
 import cloud from "../../images/clouds/cloud.webp"
 import icarus from "../../images/greek/icarus.png"

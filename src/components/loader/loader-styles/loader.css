@@ -9,40 +9,42 @@
     animation: 1s forwards 1.5s 1, 
                1s forwards 3s 1;
 }
+
 .cloud_img:nth-child(1){
-    top: 16vw;
-    left: -42vw;
-    width: 122vw;
+    top: 85vw;
+    left: -122vw;
+    width: 240vw;
     z-index: 3;
     transform: rotate(-4.9deg);
-    animation-name: cloud1_ease-out1, 
+    animation-name: cloud1_ease-out1,
                     cloud1_ease-out2;
 }
+
 @keyframes cloud1_ease-out1 {
     0%{
-        top: 16vw;
-        left: -42vw;
+        top: 85vw;
+        left: -122vw;
     }
     100%{
-        top: 24vw;
-        left: -62vw;  
+        top: 110vw;
+        left: -160vw;
         transform: rotate(0deg);
     }
 }
 @keyframes cloud1_ease-out2{
     0%{
-        top: 24vw;
-        left: -62vw; 
+        top: 110vw;
+        left: -160vw;
     }
     100%{
-        top: 26vw;
-        left: -64vw; 
+        top: 112vw;
+        left: -162vw;
     }
 }
 .cloud_img:nth-child(2){
-    top: 4vw;
-    left: 32vw;
-    width: 100vw;
+    top: 56vw;
+    left: 8vw;
+    width: 220vw;
     transform: rotate(25.79deg);
     z-index: 2;
     animation-name: cloud2_ease-out1,
@@ -50,29 +52,29 @@
 }
 @keyframes cloud2_ease-out1{
     0%{
-        top: 4vw;
-        left: 32vw;
+        top: 56vw;
+        left: 8vw;
     }
     100%{
-        top: 18vw;
-        left: 59vw;
+        top: 78vw;
+        left: 46vw;
         transform: rotate(0deg);
     }
 }
 @keyframes cloud2_ease-out2{
     0%{
-        top: 18vw;
-        left: 59vw;
+        top: 78vw;
+        left: 46vw;
     }
     100%{
-        top: 20vw;
-        left: 62vw;
+        top: 80vw;
+        left: 48vw;
     }
 }
 .cloud_img:nth-child(3){
-    top: -18vw;
-    left: -8vw;
-    width: 110vw;
+    top: -10vw;
+    left: -90vw;
+    width: 240vw;
     transform: rotate(10.97deg);
     z-index: 1;
     animation-name: cloud3_ease-out1,
@@ -80,23 +82,23 @@
 }
 @keyframes cloud3_ease-out1{
     0%{
-        top: -18vw;
-        left: -8vw;
+        top: -10vw;
+        left: -90vw;
     }
     100%{
-        top: -30vw;
-        left: -24vw;
+        top: -40vw;
+        left: -106vw;
         transform: rotate(0deg);
     }
 }
 @keyframes cloud3_ease-out2{
     0%{
-        top: -30vw;
-        left: -24vw;
+        top: -40vw;
+        left: -106vw;
     }
     100%{
-        top: -32vw;
-        left: -26vw;
+        top: -42vw;
+        left: -108vw;
     }
 }
 .dedal-icarus_img{
@@ -104,35 +106,35 @@
     animation: 1s forwards 3s 1;
 }
 .dedal-icarus_img:nth-child(1){
-    top: 6vw;
-    left: 30vw;
-    width: 28vw;
+    top: 40vw;
+    left: 14vw;
+    width: 65vw;
     animation-name: icarus;
 }
 @keyframes icarus {
     0%{
-        top: 6vw;
-        left: 30vw;
+        top: 40vw;
+        left: 14vw;
     }
     100%{
-        top: 32vw;
-        left: 20vw;    
+        top: 116vw;
+        left: 0vw;  
     }
 }
 .dedal-icarus_img:nth-child(2){
-    top: 25vw;
-    left: 47vw;
-    width: 34vw;
+    top: 98vw;
+    left: 18vw;
+    width: 70vw;
     animation-name: dedal;
 }
 @keyframes dedal {
     0%{
-        top: 25vw;
-        left: 47vw;
+        top: 98vw;
+        left: 18vw;
     }
     100%{
-        top: 2vw;
-        left: 60vw;
+        top: 27vw;
+        left: 34vw;
     }
 }
 .start-link{

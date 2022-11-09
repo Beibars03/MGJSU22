@@ -1,0 +1,250 @@
+
+@media (min-width: 1200px) {
+    .cloud_img:nth-child(1){
+        top: 8vw;
+        left: -42vw;
+        width: 120vw;
+     
+        /* animation-name: cloud1_ease-out1, 
+                        cloud1_ease-out2; */
+    }
+    @keyframes cloud1_ease-out1 {
+        0%{
+            top: 8vw;
+            left: -42vw;
+        }
+        100%{
+            top: 24vw;
+            left: -62vw;  
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes cloud1_ease-out2{
+        0%{
+            top: 24vw;
+            left: -62vw; 
+        }
+        100%{
+            top: 26vw;
+            left: -64vw; 
+        }
+    }
+    .cloud_img:nth-child(2){
+        top: 9vw;
+        left: 32vw;
+        width: 100vw;
+        /* animation-name: cloud2_ease-out1,
+                        cloud2_ease-out2;                   */
+    }
+    @keyframes cloud2_ease-out1{
+        0%{
+            top: 9vw;
+            left: 32vw;
+        }
+        100%{
+            top: 18vw;
+            left: 59vw;
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes cloud2_ease-out2{
+        0%{
+            top: 18vw;
+            left: 59vw;
+        }
+        100%{
+            top: 20vw;
+            left: 62vw;
+        }
+    }
+    .cloud_img:nth-child(3){
+        top: -22vw;
+        left: -8vw;
+        width: 116vw;
+        
+        /* animation-name: cloud3_ease-out1,
+                        cloud3_ease-out2; */
+    }
+    @keyframes cloud3_ease-out1{
+        0%{
+            top: -22vw;
+            left: -8vw;
+        }
+        100%{
+            top: -32vw;
+            left: -24vw;
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes cloud3_ease-out2{
+        0%{
+            top: -32vw;
+            left: -24vw;
+        }
+        100%{
+            top: -34vw;
+            left: -26vw;
+        }
+    }
+    .dedal-icarus_img{
+        position: absolute;
+        animation: 1s forwards 3s 1;
+    }
+    .dedal-icarus_img:nth-child(1){
+        top: 6vw;
+        left: 30vw;
+        width: 28vw;
+        /* animation-name: icarus; */
+    }
+    @keyframes icarus {
+        0%{
+            top: 6vw;
+            left: 30vw;
+        }
+        100%{
+            top: 32vw;
+            left: 20vw;    
+        }
+    }
+    .dedal-icarus_img:nth-child(2){
+        top: 25vw;
+        left: 47vw;
+        width: 34vw;
+        /* animation-name: dedal; */
+    }
+    @keyframes dedal {
+        0%{
+            top: 25vw;
+            left: 47vw;
+        }
+        100%{
+            top: 2vw;
+            left: 60vw;
+        }
+    }
+    .start-link{
+       
+        font-size: 42px;
+       
+        /* animation: start_ease-in 1s forwards 3s 1; */
+    
+    }
+    @keyframes start_ease-in {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+   
+    
+}
+
+
+@media (min-width: 992px) {
+    .cloud_img:nth-child(1){
+        top: 8vw;
+        left: -42vw;
+        width: 120vw;
+        /* animation-name: cloud1_ease-out1,
+                        cloud1_ease-out2              */
+       
+    }
+    @keyframes cloud1_ease-out1 {
+        0%{
+            top: 8vw;
+            left: -42vw;
+        }
+        100%{
+            top: 30vw;
+            left: -62vw;  
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes cloud1_ease-out2{
+        0%{
+            top: 30vw;
+            left: -62vw; 
+        }
+        100%{
+            top: 32vw;
+            left: -64vw; 
+        }
+    }
+
+    .cloud_img:nth-child(2){
+        top: 9vw;
+        left: 32vw;
+        width: 100vw;
+        /* animation-name: cloud2_ease-out1,
+                        cloud2_ease-out2;                   */
+    }
+    @keyframes cloud2_ease-out1{
+        0%{
+            top: 9vw;
+            left: 32vw;
+        }
+        100%{
+            top: 18vw;
+            left: 59vw;
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes cloud2_ease-out2{
+        0%{
+            top: 18vw;
+            left: 59vw;
+        }
+        100%{
+            top: 20vw;
+            left: 62vw;
+        }
+    }
+    .cloud_img:nth-child(3){
+        top: -22vw;
+        left: -8vw;
+        width: 116vw;
+        /* animation-name: cloud3_ease-out1,
+                        cloud3_ease-out2; */
+       
+    }
+    @keyframes cloud3_ease-out1{
+        0%{
+            top: -22vw;
+            left: -8vw;
+        }
+        100%{
+            top: -32vw;
+            left: -24vw;
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes cloud3_ease-out2{
+        0%{
+            top: -32vw;
+            left: -24vw;
+        }
+        100%{
+            top: -34vw;
+            left: -26vw;
+        }
+    }
+
+    .dedal-icarus_img:nth-child(1){
+        top: 6vw;
+        left: 30vw;
+        width: 28vw;
+        /* animation-name: icarus; */
+    }
+    @keyframes icarus {
+        0%{
+            top: 6vw;
+            left: 30vw;
+        }
+        100%{
+            top: 40vw;
+            left: 20vw;    
+        }
+    }
+}
