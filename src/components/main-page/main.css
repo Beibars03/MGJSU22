@@ -1,10 +1,56 @@
 .main{
     background:#94ADB2;
+    display: flex;
     align-items: center;
+}
+.main-wrapper{
+    z-index: 5;
+
+}
+.main_content{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 90px;
+}
+
+.main_title{
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+.main_reg-btn{
+    background-color:#96B1AE;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 22px;
+    display: inline-block;
+    margin-top: 36px;
+    padding: 22px 80px;
+    transition: .6s;
+}
+.main_reg-btn:hover{
+    color: #fff;
+    background-color:#8fa8a5;
 }
 .venus{
     position: absolute;
     right: 0;
     bottom: 0;
     height: 90vh;
+}
+.angel{
+    position: absolute;
+    width: 140px;
+}
+.angel:nth-child(1){
+    bottom: 2vw;
+    left: 8vw;
+}
+.angel:nth-child(2){
+    bottom: 8vw;
+    left: 40vw;
+}
+.angel:nth-child(3){
+    top: 3vw;
+    left: 7vw;
 }

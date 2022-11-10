@@ -1,5 +1,6 @@
 .loader{
     background:#94ADB2;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
