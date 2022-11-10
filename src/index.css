@@ -44,7 +44,7 @@ a {
   height: 100%;
   position: absolute;
   overflow: hidden;
-
+  display: flex;
 }
 .texture::after{
   content: "";

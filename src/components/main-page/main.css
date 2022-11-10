@@ -1,20 +1,19 @@
 .main{
     background:#94ADB2;
-    display: flex;
-    align-items: center;
 }
 .main-wrapper{
     z-index: 5;
-
 }
 .main_content{
+    margin-top: 84px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-left: 90px;
+    letter-spacing: 2px;   
 }
-
+.main_subtitle{
+    font-size: 12px;
+}
 .main_title{
-    font-size: 80px;
+    font-size: 46px;
     font-weight: bold;
     letter-spacing: 6px;
 }
@@ -22,10 +21,11 @@
     background-color:#96B1AE;
     border: 1px solid #000;
     text-align: center;
-    font-size: 22px;
-    display: inline-block;
+    font-size: 18px;
+    display: block;
+    width: 100%;
     margin-top: 36px;
-    padding: 22px 80px;
+    padding: 18px 6px;
     transition: .6s;
 }
 .main_reg-btn:hover{
@@ -36,21 +36,62 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 90vh;
+    height: 50vh;
 }
-.angel{
-    position: absolute;
-    width: 140px;
+.angels{
+   display: none;
 }
-.angel:nth-child(1){
-    bottom: 2vw;
-    left: 8vw;
-}
-.angel:nth-child(2){
-    bottom: 8vw;
-    left: 40vw;
-}
-.angel:nth-child(3){
-    top: 3vw;
-    left: 7vw;
+
+/* @media (min-width: 576px) {
+    .main_content{
+        margin-top: 96px;
+          
+    }
+    .main_subtitle{
+        font-size: 16px;
+    }
+    .main_title{
+        font-size: 80px;
+    }
+    .main_reg-btn{
+        font-size: 22px;
+        margin-top: 36px;
+       
+        padding: 20px 6px;
+    }
+
+    
+} */
+@media (min-width: 1200px) {
+
+    .main_content{
+        margin-left: 90px;
+    }
+   
+    .main_reg-btn{
+        width: 340px;
+    }
+
+    .venus{
+        height: 90vh;
+    }
+    .angels{
+        display: block;
+    }
+    .angel{
+        position: absolute;
+        width: 140px;
+    }
+    .angel:nth-child(1){
+        bottom: 2vw;
+        left: 8vw;
+    }
+    .angel:nth-child(2){
+        bottom: 8vw;
+        left: 40vw;
+    }
+    .angel:nth-child(3){
+        top: 3vw;
+        left: 7vw;
+    }
 }

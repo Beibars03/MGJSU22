@@ -26,12 +26,7 @@ const angels = [
 const Main = () =>{
     return(
         <section className="main texture">
-            <img src={venus} className="venus" alt="venus"/>
-            <div>
-                {angels.map((angel, index)=>
-                    <img src={angel.src} className={angel.class} key={index} alt={angel.alt}/>    
-                )}
-            </div>
+
             <Container className="main-wrapper">
                 <div className="main_content">
                     <p className="main_subtitle">Алматы. 7-9 Декабря</p>
@@ -39,7 +34,12 @@ const Main = () =>{
                     <Link to="/" className="main_reg-btn">Регистрация</Link>
                 </div>
             </Container>
-            
+            <img src={venus} className="venus" alt="venus"/>
+            <div className="angels">
+                {angels.map((angel, index)=>
+                    <img src={angel.src} className={angel.class} key={index} alt={angel.alt}/>    
+                )}
+            </div>
         </section>
         
     )
