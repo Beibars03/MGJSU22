@@ -3,11 +3,9 @@
 }
 .main-wrapper{
     z-index: 5;
-    display: flex;
-    align-items: center;
 }
 .main_content{
-    margin-bottom: 100px;
+    margin-top: 16vh;
     text-transform: uppercase;
     letter-spacing: 2px;   
 }
@@ -45,9 +43,7 @@
 }
 
 @media (min-width: 576px) {
-    .main_content{
-        margin-bottom: 186px; 
-    }
+
     .main_subtitle{
         font-size: 16px;
     }
@@ -64,8 +60,13 @@
     
 }
 @media (min-width: 992px) {
+    .main-wrapper{
+        
+        display: flex;
+        align-items: center;
+    }
     .main_content{
-        margin-bottom: 0;
+        margin-top: 0;
         margin-left: 90px;
     }
    
