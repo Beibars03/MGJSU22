@@ -2,6 +2,7 @@ import Loader from "./components/loader/loader";
 import FullPageScroll from "./components/fullpage/fullpage";
 import Main from "./components/main/main";
 import About from "./components/about/about";
+import SwiperPages from "./components/swiper/swiperPages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
     // </BrowserRouter>
     <div className="App">
       {/* <FullPageScroll></FullPageScroll> */}
-      <article className="pages texture">
+      {/* <article className="pages texture">
         <Main/>
         <About/>
-      </article>
+      </article> */}
+      <SwiperPages></SwiperPages>
    
     </div>
   );

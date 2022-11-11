@@ -4,7 +4,7 @@ import papirus from "../../images/greek/papirus.png";
 
 const About = () =>{
     return(
-        <section className="about section">
+        <section className="about texture section">
             <div className="container wrapper">
                 <div className="about-content">
                     <div className="about-text">

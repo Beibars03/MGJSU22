@@ -26,7 +26,7 @@ const angels = [
 ]
 const Main = () =>{
     return(
-        <section className="main section">
+        <section className="main  texture section">
             <Container className="wrapper main-wrapper">
                 <div className="main_content">
                     <p className="main_subtitle">Алматы. 7-9 Декабря</p>
