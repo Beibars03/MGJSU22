@@ -1,0 +1,39 @@
+.about{
+    padding: 50px 0;
+    background:#6997a1;
+    height: 100vh;
+    display: flex;
+}
+.about-content{
+    letter-spacing: 2px;
+}
+.about-text{
+    margin-bottom: 20px;
+}
+.about-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+      
+}
+.about-subtitle{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+   
+}
+  
+.papirus{
+    margin: 40px auto;
+    display: block;
+   
+    width: 100%;
+    transition: linear .4s;
+    cursor: pointer;
+     
+}
+.papirus:hover{
+    transform: scale(1.3);
+    filter: drop-shadow(-14px 11px 38px rgba(0, 0, 0, 0.3));
+}
+ 

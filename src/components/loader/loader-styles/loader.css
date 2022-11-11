@@ -1,5 +1,10 @@
 .loader{
     background:#94ADB2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -142,9 +147,10 @@
     font-size: 42px;
     letter-spacing: 16px;
     text-transform: uppercase;
-    transition: linear .6s;
+    cursor: pointer;
     z-index: 5;
     opacity: 0;
+    /* transition: linear .6s; */
     animation: start_ease-in 1s forwards 3s 1;
 }
 @keyframes start_ease-in {

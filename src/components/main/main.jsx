@@ -1,4 +1,5 @@
-import "./main.css";
+import "./main-styles/main.css";
+import "./main-styles/main-responsive.css";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import venus from "../../images/greek/venus1.gif";
@@ -25,13 +26,12 @@ const angels = [
 ]
 const Main = () =>{
     return(
-        <section className="main texture">
-
-            <Container className="main-wrapper">
+        <section className="main section">
+            <Container className="wrapper main-wrapper">
                 <div className="main_content">
                     <p className="main_subtitle">Алматы. 7-9 Декабря</p>
                     <h1 className="main_title">GameJam <br/> 2022</h1>
-                    <Link to="/" className="main_reg-btn">Регистрация</Link>
+                    <p className="main_reg-btn">Регистрация</p>
                 </div>
             </Container>
             <img src={venus} className="venus" alt="venus"/>
