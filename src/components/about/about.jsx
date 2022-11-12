@@ -1,5 +1,6 @@
 import "./about-styles/about.css";
 import "./about-styles/about-responsive.css";
+import { Container } from "react-bootstrap";
 import papirus from "../../images/greek/papirus.png";
 import Overlay from "../overlay/overlay";
 import { useState } from "react";
@@ -47,7 +48,7 @@ const About = () =>{
 
     return(
         <section className="about page">
-            <div className="container wrapper">
+            <Container className="wrapper">
                 <div className="about-content">
                     <div className="general-text">
                         <h2 className="general-title">О GAMEJAM</h2>
@@ -55,7 +56,7 @@ const About = () =>{
                     </div>
                     <img src={papirus} className="papirus" alt="papirus" onClick={handleShowText}/>
                 </div>
-            </div>
+            </Container>
             <Overlay handleShowText={handleShowText} show={show}></Overlay>
         </section>
     )

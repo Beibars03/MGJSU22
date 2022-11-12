@@ -1,16 +1,43 @@
 .agenda{
     background:#572525 url("../../../images/japan/amaterasu-png.png");
     background-repeat: no-repeat;
-    background-position: center 130px;
-    background-size: cover; 
+    background-position: center;
+    background-size: cover;
+}
+
+.scrolls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scroll-img{
+    width: 40vh;
+    margin: 10px 0;
+    transition: .4s linear;
+    cursor: pointer;
+}
+.scroll-img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(-6px 10px 26px rgba(0, 0, 0, 0.5));
 }
 
 @media (min-width: 992px) {
     .agenda{
-     
         background-position: bottom center;
-        background-size: 100%; 
-    
+        background-size: 100%;
+     
     }
+    .scrolls{
+        margin-top: 18vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .scroll-img{
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    
     
 }
