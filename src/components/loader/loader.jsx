@@ -31,7 +31,7 @@ const Loader = () =>{
                         <img src={image.src} className={image.class} alt={image.alt} key={index} />
                     )}
             </div>
-            <Link to="/main" className="start-link">Start</Link>
+            <Link to="/gamejam" className="start-link">Start</Link>
             <div className="dedal-icarus">
                     <img src={icarus} className="dedal-icarus_img" alt="icarus"/>
                     <img src={dedal} className="dedal-icarus_img" alt="dedal"/>

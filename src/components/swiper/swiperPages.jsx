@@ -3,7 +3,6 @@ import { Mousewheel, Pagination } from "swiper";
 import "swiper/css/bundle";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./swiper-pages.css";
 import Main from "../main/main";
 import About from "../about/about";
 
@@ -21,7 +20,7 @@ const SwiperPages = () =>{
                     clickable: true,
                 }}
                 modules={[Mousewheel, Pagination]}
-                className="mySwiper"
+                className="swiper-pages"
             >
                 <SwiperSlide><Main/></SwiperSlide>
                 <SwiperSlide><About/></SwiperSlide>

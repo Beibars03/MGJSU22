@@ -2,14 +2,16 @@
 
 body {
   background-color: rgb(34, 34, 34);
+  scroll-behavior:smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* h1, h2, h3, h4, h5, h6,  */
+
 body,
+h1, h2, h3, h4, h5, h6, 
 ul, ol, dd,
 p,a,
 fieldset,
@@ -36,14 +38,13 @@ button {
 a { 
   text-decoration:none;   
 }
-.fp-watermark{
-  display: none !important;
-}
-.fp-overflow{
-  overflow: hidden !important;
 
+.swiper-pages{
+  height: 100vh;
 }
-.texture::after{
+
+.texture::after,
+.swiper-slide::after{
   content: "";
   background: url("./images/loader-texture.webp");
   width: 100%;
@@ -61,3 +62,4 @@ a {
 .navigation{
   position: fixed;
 }
+
