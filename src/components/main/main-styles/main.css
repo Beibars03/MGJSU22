@@ -1,7 +1,6 @@
 .main{
     background:#94ADB2;
-    height: 100vh;
-    display: flex;
+    padding: 0;
 }
 
 .main_content{

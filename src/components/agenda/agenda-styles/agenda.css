@@ -1,0 +1,16 @@
+.agenda{
+    background:#572525 url("../../../images/japan/amaterasu-png.png");
+    background-repeat: no-repeat;
+    background-position: center 130px;
+    background-size: cover; 
+}
+
+@media (min-width: 992px) {
+    .agenda{
+     
+        background-position: bottom center;
+        background-size: 100%; 
+    
+    }
+    
+}

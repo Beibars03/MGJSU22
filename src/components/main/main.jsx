@@ -27,7 +27,7 @@ const angels = [
 ]
 const Main = ({toSlide}) =>{
     return(
-        <section className="main" id="main">
+        <section className="main page">
             <Container className="wrapper main-wrapper">
                 <div className="main_content">
                     <p className="main_subtitle">Алматы. 7-9 Декабря</p>

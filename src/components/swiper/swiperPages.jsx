@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Main from "../main/main";
 import About from "../about/about";
+import Agenda from "../agenda/agenda";
 
 const SwiperPages = () =>{
     const swiperRef = useRef();
@@ -32,7 +33,7 @@ const SwiperPages = () =>{
             >
                 <SwiperSlide><Main toSlide={toSlide}/></SwiperSlide>
                 <SwiperSlide><About/></SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide><Agenda/></SwiperSlide>
    
             </Swiper>
         </>
