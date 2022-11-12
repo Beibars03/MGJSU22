@@ -1,6 +1,7 @@
 import "./about-styles/about.css";
 import "./about-styles/about-responsive.css";
 import papirus from "../../images/greek/papirus.png";
+import Overlay from "../overlay/overlay";
 import { useState } from "react";
 const About = () =>{
     
@@ -8,6 +9,7 @@ const About = () =>{
     const handleShowText = () =>{
         setShow(prevState => !prevState)
     }
+   
     return(
         <section className="about">
             <div className="container wrapper">
@@ -19,13 +21,7 @@ const About = () =>{
                     <img src={papirus} className="papirus" alt="papirus" onClick={handleShowText}/>
                 </div>
             </div>
-            <div className="overlay" style={{ opacity: show? 1 : 0  }}>
-                <div className="close-btn" onClick={handleShowText}>
-                    <span className="close-btn-el"></span>
-                    <span className="close-btn-el"></span>
-                </div>
-
-            </div>
+            <Overlay handleShowText={handleShowText} show={show}></Overlay>
         </section>
     )
 }
