@@ -1,6 +1,6 @@
 import "./main-styles/main.css";
 import "./main-styles/main-responsive.css";
-import { useSwiper } from 'swiper/react';
+
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import venus from "../../images/greek/venus1.gif";
@@ -25,16 +25,14 @@ const angels = [
         alt: "angel3"
     },
 ]
-const Main = () =>{
-    const swiper = useSwiper();
-  
+const Main = ({toSlide}) =>{
     return(
         <section className="main" id="main">
             <Container className="wrapper main-wrapper">
                 <div className="main_content">
                     <p className="main_subtitle">Алматы. 7-9 Декабря</p>
                     <h1 className="main_title">GameJam <br/> 2022</h1>
-                    <a href="#about" className="main_reg-btn">Регистрация</a>
+                    <button className="main_reg-btn" onClick={()=> toSlide(2)}>Регистрация</button>
                 </div>
             </Container>
             <img src={venus} className="venus" alt="venus"/>

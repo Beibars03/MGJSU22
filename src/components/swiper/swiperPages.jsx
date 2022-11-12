@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
+import { useRef } from "react";
 import "swiper/css/bundle";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -7,9 +8,16 @@ import Main from "../main/main";
 import About from "../about/about";
 
 const SwiperPages = () =>{
+    const swiperRef = useRef();
+    const toSlide = (index) =>{
+        swiperRef.current.slideTo(index)
+    }
     return(
         <>
             <Swiper
+                onSwiper={(swiper) =>{
+                    swiperRef.current = swiper;
+                }}
                 direction={"vertical"}
                 speed = {800}
                 slidesPerView={"auto"}
@@ -22,10 +30,10 @@ const SwiperPages = () =>{
                 modules={[Mousewheel, Pagination]}
                 className="swiper-pages"
             >
-                <SwiperSlide><Main/></SwiperSlide>
+                <SwiperSlide><Main toSlide={toSlide}/></SwiperSlide>
                 <SwiperSlide><About/></SwiperSlide>
                 <SwiperSlide>Slide 3</SwiperSlide>
-                
+   
             </Swiper>
         </>
     )
