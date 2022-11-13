@@ -9,22 +9,21 @@
 .papirus{
     margin: 0 auto 40px;
     display: block;
-   
     width: 100%;
     transition: linear .4s;
-    cursor: pointer;
-     
-}
-.papirus:hover{
-    transform: scale(1.3);
     filter: drop-shadow(-14px 11px 38px rgba(0, 0, 0, 0.3));
+    cursor: pointer;
 }
- 
+
 .about-info-text{
-    font-size: 12px;
+    font-size: 8px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 21px;
+    line-height: 14px;
+    font-weight: 300;
+}
+.about-info-title{
+    font-size: 16px;
 }
 .about-info-list{
     list-style-type: disc;

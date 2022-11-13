@@ -1,9 +1,27 @@
 @media (min-width: 576px) {
+    .about-info-text{
+        /* font-size: 10px; */
+        line-height: 20px;
+    }
+    .about-info-title{
+        font-size: 16px;
+    }
     .papirus{
         width: 360px;
     }
 }
+@media (min-width: 992px) {
+    .about-info-text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+}
 @media (min-width: 1200px) {
+    .about-info-text{
+        font-size: 16px;
+        line-height: 28px;
+    }
     .papirus{
         width: 400px;
     }

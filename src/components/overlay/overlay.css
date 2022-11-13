@@ -26,21 +26,25 @@
   border-radius: 1px;
   background-color: #fff;
 }
-
+.overlay-content{
+  margin-top: 30px;
+}
 .close-btn-el:nth-child(1)::after{
   transform: rotate(90deg);
   margin-bottom: -2px;
 }
-.overlay-content{
-    margin-top: 52px;
-}
+
 @media (min-width: 768px) {
     
 .overlay{
-    padding: 52px 40px 25px;
+  padding: 52px 40px 25px;
   
 }
-    .close-btn{
-        right: 52px;
-    }
+.overlay-content{
+  margin-top: 52px;
 }
+.close-btn{
+  right: 52px;
+}
+}
+

@@ -25,10 +25,22 @@ const Agenda = () =>{
             alt: "scroll3"
         }
     ]
+   
     const [show, setShow] = useState(false);
-    const handleShowText = () =>{
-        setShow(prevState => !prevState)
+    const [imgIndex, setImgIndex] = useState();
+    const handleShowText = (index) =>{
+        setShow(prevState => !prevState);
+        setImgIndex(index);
+
     }
+    const images = scrolls.map((scroll, index)=>(
+                <img src={scroll.src} 
+                    className={scroll.class} 
+                    alt={scroll.alt} 
+                    style={{transform: imgIndex === index? `scale(${1.1})`: null}} 
+                    key={index} 
+                    onClick={ ()=> handleShowText(index)}/>
+            )) 
     return(
         <section className="agenda page">
             <Container className="wrapper">
@@ -38,10 +50,7 @@ const Agenda = () =>{
                         <p className="general-subtitle">Расписание GameJam 2022</p>
                     </div>
                     <div className="scrolls">
-                        {scrolls.map((scroll, index)=>
-                            <img src={scroll.src} className={scroll.class} alt={scroll.alt} key={index} onClick={handleShowText}/>
-                        )}
-                        
+                        {images}
                     </div>
                 </div>
             </Container>
