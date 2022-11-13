@@ -12,7 +12,7 @@
 }
 .scroll-img{
     width: 40vh;
-    margin: 10px 0;
+    margin: 2vh 0;
     transition: .4s linear;
     cursor: pointer;
     filter: drop-shadow(-6px 10px 26px rgba(0, 0, 0, 0.5));

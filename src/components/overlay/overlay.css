@@ -9,6 +9,9 @@
     left: 0;
     z-index: 6;
 }
+.overlay-content{
+  margin-top: 30px;
+}
 .close-btn{
   position: fixed; 
   right: 22px;
@@ -26,9 +29,7 @@
   border-radius: 1px;
   background-color: #fff;
 }
-.overlay-content{
-  margin-top: 30px;
-}
+
 .close-btn-el:nth-child(1)::after{
   transform: rotate(90deg);
   margin-bottom: -2px;
