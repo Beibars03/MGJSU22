@@ -35,7 +35,7 @@ const Main = ({toSlide}) =>{
                     <button className="main_reg-btn" onClick={()=> toSlide(2)}>Регистрация</button>
                 </div>
             </Container>
-            <img src={venus} className="venus" alt="venus"/>
+            <img src={venus} className="venus gif-img" alt="venus"/>
             <div className="angels">
                 {angels.map((angel, index)=>
                     <img src={angel.src} className={angel.class} key={index} alt={angel.alt}/>    

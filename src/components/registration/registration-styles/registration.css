@@ -1,0 +1,76 @@
+.registration{
+    padding: 20px 0;
+    background-color: #97886C;
+    height: 100vh;
+}
+.kempir{
+    position: absolute;
+    right: -16vw;
+    bottom: 0;
+    height: 80vh;
+}
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #B8B399;
+    padding: 24px;
+    box-shadow: -10px 10px 40px 1px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
+.reg-control{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #323232;
+    padding: 6px;
+    margin: 4px 0;
+}
+.reg-control::placeholder{
+    color: #fff;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+.reg-btn{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 4vh;
+    padding: 14px;
+    border: 1px solid #000;
+    background-color: #979483;
+    transition: .6s;
+}
+.reg-btn:hover{
+    background-color: #8e8b7b;
+ 
+
+}
+@media (min-width: 576px) {
+    .reg-control{
+        font-size: 16px;
+        margin: 6px 0;
+    }
+    .reg-control::placeholder{  
+        font-size: 14px;
+    }
+}
+@media (min-width: 768px) {
+    .reg-form{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .kempir{
+        right: 4vw;
+        height: 90vh;
+    }
+    
+}
+@media (min-width: 992px) {
+
+    .reg-form{
+        padding: 32px 45px;
+        margin: 0;
+    }
+    
+}
