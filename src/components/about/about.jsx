@@ -1,3 +1,4 @@
+import React from 'react';
 import "./about-styles/about.css";
 import "./about-styles/about-responsive.css";
 import { Container } from "react-bootstrap";
@@ -11,17 +12,15 @@ const aboutTxt = [
     "ГеймДжем пройдет в командном режиме,так что приходи с друзьями или найди команду прямо на джеме!",
     "Цель нашего Гейм Джема - построить сильное сообщество игровых разработчиков в нашей стране! До скорых встреч!",
 ]
-const aboutText = [
-    
-]
+
 const AboutText = () =>{
     return(       
         <div className="about-info-text">
-            {aboutTxt.map((txt)=>
-                <>
+             {aboutTxt.map(txt =>
+                <React.Fragment key={txt}>
                     <p>{txt}</p>
                     <br/>
-                </>
+                </React.Fragment>
             )}
             <h4 className="about-info-title">Тебя ожидают:</h4>
             <ul className="about-info-list">

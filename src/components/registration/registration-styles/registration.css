@@ -7,7 +7,7 @@
     position: absolute;
     right: -16vw;
     bottom: 0;
-    height: 80vh;
+    height: 90vh;
 }
 .reg-form{
     display: flex;
@@ -24,7 +24,7 @@
     border-radius: 0;
     border-bottom: 1px solid #323232;
     padding: 6px;
-    margin: 4px 0;
+
 }
 .reg-control::placeholder{
     color: #fff;
@@ -43,16 +43,13 @@
 }
 .reg-btn:hover{
     background-color: #8e8b7b;
- 
-
 }
 @media (min-width: 576px) {
     .reg-control{
         font-size: 16px;
-        margin: 6px 0;
     }
     .reg-control::placeholder{  
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media (min-width: 768px) {
@@ -62,7 +59,6 @@
     }
     .kempir{
         right: 4vw;
-        height: 90vh;
     }
     
 }
