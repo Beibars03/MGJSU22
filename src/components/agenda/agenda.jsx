@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 import scroll1 from "../../images/japan/scroll1.png";
 import scroll2 from "../../images/japan/scroll2.png";
 import scroll3 from "../../images/japan/scroll3.png";
-const Agenda = () =>{
+const Agenda = ({handleShowText, show, imgIndex}) =>{
 
     const scrolls = [
         {
@@ -26,13 +26,7 @@ const Agenda = () =>{
         }
     ]
    
-    const [show, setShow] = useState(false);
-    const [imgIndex, setImgIndex] = useState();
-    const handleShowText = (index) =>{
-        setShow(prevState => !prevState);
-        setImgIndex(index);
-
-    }
+  
     const images = scrolls.map((scroll, index)=>(
                 <img src={scroll.src} 
                     className={scroll.class} 

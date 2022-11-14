@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "swiper/css/bundle";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,8 +8,26 @@ import Main from "../main/main";
 import About from "../about/about";
 import Agenda from "../agenda/agenda";
 import Registration from "../registration/registration";
+
+import { useSwiper } from 'swiper/react';
+
+
 const SwiperPages = () =>{
     const swiperRef = useRef();
+    const swiper = useSwiper();
+
+    
+    const [imgIndex, setImgIndex] = useState();
+    const [show, setShow] = useState(false);
+    const handleShowText = (index) =>{
+        setShow(prevState => !prevState)
+        setImgIndex(index);
+        if(show){
+            swiperRef.current.enable()
+        }else{
+            swiperRef.current.disable(); 
+        }
+    }
     const toSlide = (index) =>{
         swiperRef.current.slideTo(index)
     }
@@ -31,10 +49,27 @@ const SwiperPages = () =>{
                 modules={[Mousewheel, Pagination]}
                 className="swiper-pages"
             >
-                <SwiperSlide><Main toSlide={toSlide}/></SwiperSlide>
-                <SwiperSlide><About/></SwiperSlide>
-                <SwiperSlide><Agenda/></SwiperSlide>
-                <SwiperSlide><Registration/></SwiperSlide>
+                <SwiperSlide>
+                    <Main toSlide={toSlide}/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <About 
+                        handleShowText={handleShowText} 
+                        show={show}/>
+                    </SwiperSlide>
+                <SwiperSlide>
+                    <Agenda 
+                        handleShowText={handleShowText} 
+                        show={show}
+                        imgIndex={imgIndex}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Registration
+                        handleShowText={handleShowText} 
+                        show={show}
+                    />
+                </SwiperSlide>
    
             </Swiper>
         </>

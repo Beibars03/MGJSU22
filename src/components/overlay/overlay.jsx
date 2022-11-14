@@ -1,6 +1,6 @@
 import "./overlay.css";
 
-const Overlay = ({handleShowText, show, text}) =>{
+const Overlay = ({handleShowText, show, content}) =>{
     return(
         <div className="overlay" style={{ display: show? "block" : "none"  }}>
             <div className="close-btn" onClick={handleShowText}>
@@ -8,7 +8,7 @@ const Overlay = ({handleShowText, show, text}) =>{
                 <span className="close-btn-el"></span>
             </div>
             <div className="overlay-content">
-                {text}
+                {content}
                 
             </div>
 

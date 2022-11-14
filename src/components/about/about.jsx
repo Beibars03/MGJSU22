@@ -40,13 +40,8 @@ const AboutText = () =>{
         </div>
     )
 }
-const About = () =>{
+const About = ({handleShowText, show}) =>{
     
-    const [show, setShow] = useState(false);
-    const handleShowText = () =>{
-        setShow(prevState => !prevState)
-    }
-
     return(
         <section className="about page">
             <Container className="wrapper">
@@ -65,7 +60,7 @@ const About = () =>{
             <Overlay 
                 handleShowText={handleShowText} 
                 show={show}
-                text={<AboutText/>}
+                content={<AboutText/>}
             />
         </section>
     )
