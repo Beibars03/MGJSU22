@@ -7,50 +7,51 @@ import kempir from "../../images/turkic/kempir.gif";
 
 const formFields = [
     {
-        name:"team",
         type: "text",
         placeholder: "название команды",
+        name: "entry.622377088",
     },
     {
-        name: "study",
         type: "text",
         placeholder: "учебное заведение",
+        name: "entry.966331574",
     },
     {
-        name: "email",
         type: "email",
         placeholder: "электронная почта",
+        name: "entry.1842236906",
     },
     {
-        name: "tel",
         type: "tel",
         placeholder: "номер телефона",
+        name: "entry.1419582377",
     },
     {
-        name: "captain",
         type: "text",
         placeholder: "капитан",
+        name: "entry.1601897725",
     },
     {
-        name: "participant1",
         type: "text",
         placeholder: "участник",
+        name:"entry.1555555961",
     },
     {
-        name: "participant2",
         type: "text",
         placeholder: "участник",
+        name:"entry.1688673403",
     },
     {
-        name: "participant3",
         type: "text",
         placeholder: "участник",
+        name: "entry.1712183872",
     },
     {
-        name: "participant4",
         type: "text",
         placeholder: "участник",
-    }
+        name: "entry.752129752",
+    },
+ 
 
 ]
 
@@ -65,7 +66,7 @@ const Registration = () =>{
             [name]: value
         })
     }
-    console.log()
+  
     
     const handleSubmit = (e) =>{
         e.preventDefault()
@@ -82,16 +83,13 @@ const Registration = () =>{
                         <h2 className="general-title">Регистрация на SUMGJ22</h2>
                         <p className="general-subtitle">Регистрация команды</p>
                     </div>
-                    <form method="post"  className="reg-form" id="reg-form" onSubmit={handleSubmit}>
+                    <form method="post"  className="reg-form">
                         {formFields.map((input, index)=>
                             <input 
                                 type={input.type} 
                                 placeholder={input.placeholder} 
                                 key={index} 
-                                name={input.name}
-                                className="reg-control"
-                                onChange={handleChange}
-                            />    
+                                className="reg-control"/>
                         )}
                         <input type="submit" value="Регистрация" className="reg-btn"/>
                     </form>
